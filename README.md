@@ -15,3 +15,6 @@ Installation
 
 In facetile.js,
 fill out appId and correct channelUrl.
+
+Check the demo: 
+http://theeyes.net/fb_facetile/
