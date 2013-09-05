@@ -3,8 +3,8 @@
 // 그 다음 제가 만들어놓은 channelUrl 파일 그냥 복사해서 해당 위치에 떨꿔놓으면 끝.
 window.fbAsyncInit = function() {
 	FB.init({
-		appId      : '123456789012345', // Your FB App ID
-		channelUrl : 'channel.php', //  Channel File
+		appId      : '000000000000000', // App ID
+		channelUrl : 'channel.php', // Channel File
 		status     : true, // check login status
 		cookie     : true, // enable cookies to allow the server to access the session
 		xfbml      : true  // parse XFBML

@@ -57,13 +57,12 @@
 	<body>
 		<div id="fb-root"></div>
 		<script src="facetile.js"></script>
-		
-		<input type="button" value="사진들 서버에서 다시 가져오기" onclick="findpPic();">
-		<input type="button" value="FB앱에 사진사용 허가해주기" onclick="FB.login();">
-		
-		<fb:profile-pic uid="loggedinuser" size="square"></fb:profile-pic>
-		<span>요건 당신에게 사진사용권한을 허락받았을때 사용하는 당신의 사진</span>
-		<p>페북앱을 통해 허가받은 사용자들의 사진을 이용해 80개의 타일을 생성합니다</p>
+		<span>fb_facetile : DEMO</span>
+		<input type="button" value="2. reload userlist from server" onclick="findpPic();">
+		<input type="button" value="1. authorize this site" onclick="FB.login();">
+		<fb:profile-pic uid="loggedinuser" height="30px"></fb:profile-pic>
+		<span><- your profile picture (example)</span>
+		<p>make 80 tiles, sorted by random.</p>
 		<div id="container">
 	
 		</div>
