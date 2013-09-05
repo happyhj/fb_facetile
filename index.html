@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<style>
+			div#container {
+				width: 960px;
+				height: 768px;
+			}
+			div.element {
+				width: 96px;
+				height: 96px;
+			}
+			div.element>img {
+				width: 96px;
+				height: 96px;
+			}
+				
+			/* isotope 리로딩 애니메이션 부분 - 시작.  필요치 않으면 삭제해도 된다 .*/	
+			.isotope,
+			.isotope .isotope-item {
+			  /* change duration value to whatever you like */
+			  -webkit-transition-duration: 0.8s;
+			     -moz-transition-duration: 0.8s;
+			      -ms-transition-duration: 0.8s;
+			       -o-transition-duration: 0.8s;
+			          transition-duration: 0.8s;
+			}
+			
+			.isotope {
+			  -webkit-transition-property: height, width;
+			     -moz-transition-property: height, width;
+			      -ms-transition-property: height, width;
+			       -o-transition-property: height, width;
+			          transition-property: height, width;
+			}
+			
+			.isotope .isotope-item {
+			  -webkit-transition-property: -webkit-transform, opacity;
+			     -moz-transition-property:    -moz-transform, opacity;
+			      -ms-transition-property:     -ms-transform, opacity;
+			       -o-transition-property:      -o-transform, opacity;
+			          transition-property:         transform, opacity;
+			}
+			/* isotope 리로딩 애니메이션 부분 - 끝 .*/	
+
+		</style>	
+		<!-- jQuery 1.10.1 : Start -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<!-- jQuery 1.10.1 : End -->
+		<script src="http://isotope.metafizzy.co/jquery.isotope.min.js"></script>
+		<script type="text/javascript">
+
+		</script>
+		<title></title>	
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		<script src="facetile.js"></script>
+		
+		<input type="button" value="사진들 서버에서 다시 가져오기" onclick="findpPic();">
+		<input type="button" value="FB앱에 사진사용 허가해주기" onclick="FB.login();">
+		
+		<fb:profile-pic uid="loggedinuser" size="square"></fb:profile-pic>
+		<span>요건 당신에게 사진사용권한을 허락받았을때 사용하는 당신의 사진</span>
+		<p>페북앱을 통해 허가받은 사용자들의 사진을 이용해 80개의 타일을 생성합니다</p>
+		<div id="container">
+	
+		</div>
+	</body>
+</html>
